@@ -1,0 +1,39 @@
+{
+  "name": "async-js-exercises",
+  "version": "1.0.0",
+  "description": "<!-- @format -->",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/testProblem2.js",
+    "configure-husky": "npx husky install && npx husky add .husky/pre-commit \"npx --no-install lint-staged\""
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,json}": [
+      "prettier --write ."
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhipatel9607/Async-JS-exercises.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhipatel9607/Async-JS-exercises/issues"
+  },
+  "homepage": "https://github.com/abhipatel9607/Async-JS-exercises#readme",
+  "devDependencies": {
+    "eslint": "^8.51.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.1",
+    "prettier": "^3.0.3"
+  }
+}
